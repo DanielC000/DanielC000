@@ -1,15 +1,15 @@
 
       <svg
-        width="331.68750000000006"
+        width="325.0999989509582"
         height="195"
-        viewBox="0 0 331.68750000000006 195"
+        viewBox="0 0 325.0999989509582 195"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Daniel Chenari's GitHub Stats, Rank: B-</title>
-        <desc id="descId">Total Stars Earned: 7, Total Commits  (last year) : 4274, Total PRs: 49, Total Issues: 2, Contributed to (last year): 7</desc>
+        <title id="titleId">Daniel Chenari&#39;s GitHub Stats, Rank: B-</title>
+        <desc id="descId">Total Stars Earned: 7, Total Commits  (last year) : 4275, Total PRs: 50, Total Issues: 2, Contributed to (last year): 8</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,11 +73,12 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 157.735987375183;
+        stroke-dashoffset: 157.2974365557478;
       }
     }
   
   
+          
 
           
       /* Animations */
@@ -102,15 +103,21 @@
         </style>
 
         
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
           height="99%"
           stroke="#e4e2e2"
-          width="330.68750000000006"
+          width="324.0999989509582"
           fill="#fffefe"
           stroke-opacity="0"
         />
@@ -126,7 +133,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >Daniel Chenari's GitHub Stats</text>
+      >Daniel Chenari&#39;s GitHub Stats</text>
     </g>
       </g>
     
@@ -148,7 +155,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Stars Earned:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="stars"
       >7</text>
@@ -163,7 +170,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Commits (last year):</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="commits"
       >4.3k</text>
@@ -178,10 +185,10 @@
       <text class="stat  bold" x="25" y="12.5">Total PRs:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="prs"
-      >49</text>
+      >50</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -193,7 +200,7 @@
       <text class="stat  bold" x="25" y="12.5">Total Issues:</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="issues"
       >2</text>
@@ -208,10 +215,10 @@
       <text class="stat  bold" x="25" y="12.5">Contributed to (last year):</text>
       <text
         class="stat  bold"
-        x="219.01"
+        x="224.01"
         y="12.5"
         data-testid="contribs"
-      >7</text>
+      >8</text>
     </g>
   </g>
     </svg>
