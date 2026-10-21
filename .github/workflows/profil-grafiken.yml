@@ -1,0 +1,43 @@
+name: Update profile graphics
+
+on:
+  schedule:
+    # Täglich 04:17 UTC. Krumme Minute mit Absicht.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Statistik-Karte erzeugen
+        uses: readme-tools/github-readme-stats-action@v2.1.0
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&hide_rank=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Ohne das schreibt die Action bei einem Rate-Limit eine
+          # „Something went wrong"-Karte ins Repo.
+          fail_on_error: "true"
+
+      - name: Beitrags-Animation erzeugen
+        uses: Platane/snk/svg-only@v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake.svg
+            profile/snake-dark.svg?palette=github-dark
+
+      - name: Nur committen, wenn sich etwas geändert hat
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git diff --staged --quiet || git commit -m "chore: Profil-Grafiken aktualisiert"
+          git push
